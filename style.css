@@ -28,6 +28,15 @@ body {
   min-width: 370px;
   max-width: 370px;
 }
+
+@media (max-width: 600px) {
+  .calc {
+    height: 30vh;
+    min-width: 170px;
+    max-width: 170px;
+  }
+}
+
 .display {
   width: 100%;
   min-height: 20%;
@@ -48,7 +57,9 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
 }
-
+.previousNumber {
+  color: rgb(182, 182, 182);
+}
 .mathSign,
 .previousNumber {
   font-size: 22px;
