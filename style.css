@@ -46,12 +46,13 @@ body {
 .currentNumber {
   font-size: 35px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
+
+.mathSign,
 .previousNumber {
-  color: rgb(182, 182, 182);
-}
-.mathSign {
   font-size: 22px;
+  color: white;
 }
 .panel {
   height: 80%;
