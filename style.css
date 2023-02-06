@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+html {
+  font-family: "Montserrat", sans-serif;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #e4a7db,
+    #d245db,
+    #a22dce,
+    #7d3ac5,
+    #4d56bd
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc {
+  height: 60vh;
+  min-width: 370px;
+  max-width: 370px;
+}
+.display {
+  width: 100%;
+  min-height: 20%;
+  background-color: rgba(29, 27, 27, 0.152);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: white;
+  word-wrap: break-word;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.currentNumber {
+  font-size: 35px;
+  font-weight: bold;
+}
+.previousNumber {
+  color: rgb(182, 182, 182);
+}
+.mathSign {
+  font-size: 22px;
+}
+.panel {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, fr);
+  gap: 2px;
+}
+.panel button {
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.466);
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.566);
+}
+.equals {
+  grid-row: 4/6;
+  grid-column: -2/-1;
+}
+.calcHistory {
+  height: 60vh;
+  margin: 20px;
+  width: 150px;
+  background-color: rgba(29, 27, 27, 0.151);
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.history {
+  list-style: none;
+}
+.history-title {
+  padding-bottom: 10px;
+}
+.history-btn {
+  color: white;
+  background-color: rgba(29, 27, 27, 0.6);
+  border: none;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  display: none;
+  margin: 5px auto;
+}
+.history-btn.active {
+  display: block;
+}
+.history-item {
+  margin: 8px 0px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(27, 27, 27, 0.233);
+}
