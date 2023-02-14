@@ -52,7 +52,7 @@ function showResult() {
       result = a * b;
       break;
     case ":":
-      result = a / b;
+      result = b / a;
       break;
     case "^":
       result = b ** a;
